@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+
+            width: 300PX;
+            height: 250px;
+            padding: 20px;
+           
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="MuestraImagen()">Agregar</button>
+ 
+   <script>
+        let contador =1; 
+
+        function MuestraImagen(){
+            
+          
+            if(contador<4)
+            {
+                
+                var imagen = document.createElement("img");
+                imagen.src ="Rojas"+contador+".jpg";
+                document.body.appendChild(imagen);
+
+                contador ++;
+            }
+            else{
+
+                alert("Se agotaron las imagenes")
+
+            }
+
+
+
+
+        
+        // var imagen = document.createElement("img");
+        //  imagen.src ="Rojas1.jpg";
+        // //   document.body.appendChild(imagen);
+
+        // if(imagen.src=="Rojas1.jpg")
+        // {
+          
+        // }
+        // else{
+        //     var imagen = document.createElement("img");
+        //     imagen.src ="Rojas2.jpg";
+        //     document.body.appendChild(imagen);
+        // }
+        
+        
+        // if(imagen.src ="Rojas1.jpg")
+        // {
+        //     var imagen2 = document.createElement("img");
+        //     imagen2.src ="Rojas2.jpg";
+        //     document.body.appendChild(imagen2);
+        // }
+        // if(imagen.src ="Rojas2.jpg")
+        // {
+        //     var imagen3 = document.createElement("img");
+        //     imagen3.src ="Rojas3.jpg";
+        //     document.body.appendChild(imagen3);
+        // }
+
+        
+
+
+    }
+
+    //permite crear parrafos
+    // var parrafo = document.createElement("P");
+        
+   //iner text "cambia el contenido del texto"
+        // parrafo.innerText="Se agrega un parrafo con javaScript"
+    
+
+
+//    document.body.appendChild(parrafo);
+   
+
+   </script>
+
+
+
+</body>
+</html>

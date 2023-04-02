@@ -7,10 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         var nombre =prompt("Por favor dame tu nombre");
         var respuesta = "Hola " + nombre + " Bienvenido";
         alert(respuesta);
-    </script>
+    </script> -->
+
+    <script>
+    function alerta()
+    {
+    var mensaje;
+    var opcion = confirm("Clicka en Aceptar o Cancelar");
+    if (opcion == true) {
+        mensaje = "Has clickado OK";
+	} else {
+	    mensaje = "Has clickado Cancelar";
+	}
+	document.getElementById("ejemplo").innerHTML = mensaje;
+
+}
+</script>
+<p id="ejemplo">En este párrafo se mostrará la opción clickada por el usuario</p>
+ 
+<button onclick="alerta()">Clicka para mostrar mensaje</button>
+
+
 </body>
 </html>
